@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css" media="screen" >
+    <link
+      rel="stylesheet"
+      href="mobile.css"
+      media="screen and (max-width: 800px)"
+    >
+    <link rel="shortcut icon" href="self1.JPG" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="desktop.css"
+      media="screen and (min-width: 800px)"
+    >
+    <script src="https://kit.fontawesome.com/70b749bba6.js" crossorigin="anonymous"></script>
+  </head>
+  <body id="clicked">
+    <header>
+      <a href="#clicked" class="on showNav"></a>
+      <a href="#" class="off showNav"> </a>
+      <h1 class="font">Report</h1>
+      -
+      <!-- #This creates a header  -->
+    </header>
+
+    <nav class="sticky_nav">
+      <ul class="ver">
+        <!-- creating a class to allow easy acces to all the pages when editing with css
+            list item nested indide a list tag list is nested in ul -  the code below creates links with href links with a giving name which inks to the a spercifc page  -->
+        <li>
+          <a href="index.html"> Home Page </a>
+          <ul>
+            <li><a href=index.html#ab>About me </a></li>
+            <li><a href=index.html#hb>Hobbies</a></li>
+            <li><a href=index.html#sk2>skills</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="portfolio.html">Portfolio</a>
+          <ul>
+            <li><a href='portfolio.html#pr1'> Project 1 - ML stock pridiction</a></li><!-- #Adding my projects to my portfolio -->
+            <li><a href = 'portfolio.html#pr2'>project 2 - ML Salary</a></li>
+            <li><a href = 'portfolio.html#pr3'>project 3 - Data Visualization</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="contact.html"> Connect With Me </a>
+          <ul>
+            <li><a href="contact.html#Enquiry">Enquiry</a></li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/kelvin-adjei-rounce-06b34824a"
+                >linkedin</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://docs.google.com/document/d/1Nsfe_wQhwS1AfHzsUISpYph_h8mwi3gI/edit?usp=sharing&ouid=114020129318091959316&rtpof=true&sd=true"
+                >Resume</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="workexperience.html">My Experience</a>
+          <ul>
+            <li><a href="workexperience.html#Pwc">PwC-Spring Week </a></li>
+                <li><a href="workexperience.html#KPMG">KPMG-insight day</a></li>
+                <li><a href="workexperience.html#db">Deutsche Bank-Spring Week</a></li>
+                <li><a href="workexperience.html#amex">American Express Spring Week</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="sitereport.html"> Report </a>
+          <ul>
+            <li><a href='sitereport.html#exp'>My Experience</a></li>
+            <li><a href='sitereport.html#cha'>Key Featuers</a></li>
+            <li><a href='sitereport.html#val'>HTML Validation</a></li>
+            <li><a href='sitereport.html#valcss'>CSS Validation</a></li>
+            <li><a href='sitereport.html#prgress'>Progress </a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+        <!--In the main section of my report i used classed and ids to edit and dircet the user to sections when clicked
+        i talked about my expreinces with this course and the skills learnt-->
+        <h2 class="exp2" id="exp" >My Experience</h2>
+      <p  class="exp1" >
+        What  Amazing Language's. Through My experience of building this Website
+        I have not only learnt about CSS and HTML, but I have picked up some key concepts and increased my create side.
+        Form understanding the different colours that can be formed with, rgb, hex and hsl i decided to stick with a luxry theme 
+        with a gold and gray trim. Using external sights like Coolers and Google fonts, i was able to see my vesion come to life.
+        All in all this experience was nothing short of amazing. 
+    
+      </p>
+
+      <h2 class="chan" id="cha" >Key Featuers</h2>
+      <p  class="cha1"  >
+        Many Key featues where used to bring this website togther, one keu featuer that does not go unnoticed is the colour skeem,
+        I used gold and black and gray to create a luxry feel as I want anyone that see's this webiste to understaned the type of 
+        designes and vibes i can bring to life purly of colours alone. 
+
+        Another major feature is anmations implemented, i used smoth transitions for a better user experience, alongside with this links where 
+        used to create the effect of the user being in control of each section of the pages and navigation. This modual has taught me 
+        how to captivate and design effectivaly. 
+    
+      </p>
+<!-- HTML Validation
+ -->      <h2 class="val1" id="val" >HTML Validation</h2> <!-- within this section i added the validation of my HTML files   -->
+
+      <p class="htmlVal">Index.html Validation <!-- Text and class assigned to help easly understand what peace of validation the user is looking at -->
+
+        <img class="validation"  src="index_Validation.png" alt="Index.html Validation"> <!-- I screenshotted the validation and saved it to the same folder -->
+        
+      </p>
+
+
+      <p class="htmlVal">Contact.Html Validation
+
+        <img class="validation"  src="Contact_val.png" alt="Contact.html Validation">
+
+      </p>
+
+      <p class="htmlVal">Portfolio.Html Validation
+
+        <img class="validation"  src="portfoval.png" alt="Portfolio.Html Validation">
+
+      </p>
+
+      <p class="htmlVal">Workexperience.Html Validation
+
+        <img class="validation"  src="workExpVali.png" alt="workexperience.Html Validation">
+
+      </p>
+
+      <p class="htmlVal">sitereport.Html Validation
+
+        <img class="validation"  src="sitereportval.png" alt="sitereport.Html Validation">
+
+      </p>
+
+<!-- css validation 
+ -->
+      <h2 class="val1" id="valcss" >CSS Validation</h2> <!-- within this section i added the validation of my HTML files   -->
+
+      <p class="htmlVal">Desktop.CSS Validation <!-- Text and class assigned to help easly understand what peace of validation the user is looking at -->
+
+        <img class="validation"  src="DesktopVal.png" alt="Desktop.css Validation"> <!-- I screenshotted the validation and saved it to the same folder -->
+        
+      </p>
+
+
+      <p class="htmlVal">Main.CSS Validation
+
+        <img class="validation"  src="mainval.png" alt="Main.css Validation">
+
+      </p>
+
+      <p class="htmlVal"> Mobile.css Validation
+
+        <img class="validation"  src="Mobileval.png" alt="Mobile.css Validation">
+
+      </p>
+
+<!-- Progress Pics
+ -->
+
+ <h2 class="val1" id="prgress" >Progress </h2> <!-- within this section i added the validation of my HTML files   -->
+
+ <p class="htmlVal">Home Page<!-- Text and class assigned to help easly understand what peace of validation the user is looking at -->
+
+   <img class="validation"  src="HomePage.png" alt="Progress"> <!-- I screenshotted the validation and saved it to the same folder -->
+   <a href="index.html"><img class="validation"  src="HomPfini.png" alt="Progress"></a>
+
+ </p>
+
+
+ <p class="htmlVal">Portfolio Page
+
+   <img class="validation"  src="PortfProgress.png" alt="Progress">
+   <a href="portfolio.html"><img class="validation"  src="Portprogress.png" alt="Progress"></a>
+
+
+ </p>
+
+ <p class="htmlVal">Contact Page 
+
+  <img class="validation"  src="contactpageProgress.png" alt="Progress">
+  <a href="contact.html"><img class="validation"  src="Contactfini.png" alt="Progress"></a>
+
+</p>
+
+<p class="htmlVal">Work Experience  
+
+  <img class="validation"  src="Wrkprg.png" alt="Progress">
+  <a href="workexperience.html"><img class="validation"  src="Wrkprg1.png" alt="Progress"></a>
+
+</p>
+
+
+
+    </main>
+
+    <aside></aside>
+
+    <footer>&copy; Kelvin Adjei Rounce 2023 
+      <a class="icon" href="https://www.linkedin.com/in/kelvin-adjei-rounce-06b34824a"><i class="fa-brands fa-linkedin-in"></i></a> 
+      <a class="icon" href="https://github.com/kelv696"><i class="fa-brands fa-github"></i></a><!-- linking to my linkdin with a linkdin icon -->
+    </footer>
+  </body>
+</html>

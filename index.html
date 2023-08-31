@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css" media="screen" >
+    <link rel="shortcut icon" href="self1.JPG" type="image/x-icon">
+    <!-- creating css files to edit my code for spercifc sections -->
+    <link
+      rel="stylesheet"
+      href="mobile.css"
+      media="screen and (max-width: 800px)"
+    >
+    <link
+      rel="stylesheet"
+      href="desktop.css"
+      media="screen and (min-width: 800px)"
+    >
+    <script src="https://kit.fontawesome.com/70b749bba6.js" crossorigin="anonymous"></script>
+  </head>
+  <body id="clicked">
+    <header>
+      <a href="#clicked" class="on showNav"></a>
+      <!-- creating a link for a hamburger icon to open link for mobile version  -->
+      <a href="#" class="off showNav"> </a>
+      <h1 class="font">Welcome !</h1>
+      -
+      <!-- #This creates a header  creating a font class to attach to each 
+        heading-->
+    </header>
+
+    <nav class="sticky_nav">
+      <ul class="ver">
+        <!-- creating a class to allow easy acces to all the pages when editing with css
+            list item nested indide a list tag list is nested in ul -  the code below creates links with href links with a giving name which inks to the a spercifc page
+        I have also structed this in a way to create a clean drop doen menu  -->
+        <li>
+          <a href="index.html"> Home Page </a>
+          <ul>
+            <li><a href="index.html#ab">About me </a></li>
+            <li><a href="index.html#hb">Hobbies</a></li>
+            <li><a href="index.html#sk2">Skills</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="portfolio.html">Portfolio</a>
+          <ul>
+            <li>
+              <a
+                href="portfolio.html#pr1"
+              >
+                Project 1 - ML stock pridiction</a
+              >
+            </li>
+            <!-- #Adding my projects to my portfolio -->
+            <li>
+              <a href="portfolio.html#pr2"
+                >project 2 - ML Salary</a
+              >
+            </li>
+            <!-- _blank used to open a new tab as i want my projects to be displayed in a new tab  -->
+            <li>
+              <a href="portfolio.html#pr3"
+                >project 3 - Data Visualization</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="contact.html">Connect With Me</a> <!-- linkndig to my contact page  -->
+          <ul>
+            <li>
+              <a href="contact.html#Enquiry">Enquiry</a></li> <!-- Creating links for drop down menu in order to lead users to sections selected -->
+            <li>
+              <a
+              href="https://www.linkedin.com/in/kelvin-adjei-rounce-06b34824a"
+              >linkedin</a>  <!-- connecting to linkdin accont for to create a connection  -->
+            </li>
+            <li>
+              <a
+                href="https://docs.google.com/document/d/1Nsfe_wQhwS1AfHzsUISpYph_h8mwi3gI/edit?usp=sharing&ouid=114020129318091959316&rtpof=true&sd=true"
+                >Resume</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="workexperience.html">My Experience</a> <!-- linking to work experience -->
+          <ul>
+            <li><a href="workexperience.html#Pwc">PwC-Spring Week </a></li>
+                <li><a href="workexperience.html#KPMG">KPMG-insight day</a></li>
+                <li><a href="workexperience.html#db">Deutsche Bank-Spring Week</a></li>
+                <li><a href="workexperience.html#amex">American Express Spring Week</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="sitereport.html"> Report </a> <!-- site report page link -->
+          <ul>
+            <li><a href="sitereport.html#exp">My Experience</a></li> <!--link for drop down menu to send user to relevent page section -->
+            <li><a href="sitereport.html#cha">Key Featuers</a></li>
+            <li><a href='sitereport.html#val'>HTML Validation</a></li>
+            <li><a href='sitereport.html#valcss'>CSS Validation</a></li>
+            <li><a href='sitereport.html#prgress'>Progress </a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <h2 class="cl">Hi,</h2> <!-- creating a subheading h2 tag with a class to edit just that section-->
+
+      <h1 class="c2">I'm Kelvin Adjei Rounce</h1> <!-- class c2 used for editing -->
+
+      <h2 class="c3">Ai/Data Science/ Web Devloper</h2>
+
+      <a href="https://www.linkedin.com/in/kelvin-adjei-rounce-06b34824a"><img
+        class="img"
+        src="self1.JPG"
+        alt="Hey its ME!"
+        width="460"
+        height="475"
+      ></a>  <!-- in the code above i implemneted an image, to do this i placed the image within the same folder that all my 
+      pages are in- the width and hight where edit and a class was placed in order to move the image and create a radious  -->
+
+      <p class="ab" id="ab"> <!-- used a p tag to create this section of text- class a b was assigned to edit and create user
+       a better visual expereince for the user  - An id was used to allow the links within the drop down menu to work effectively  -->
+        One main thing I want to make fully transparent and evident is my
+        mindset. The best way to describe it is through the phrase Knowledge
+        seeking humility. Regardless of the immense number of skills I learn and
+        the knowledge I continue to gain, I understand that there will always be
+        something I dont know that someone else may know. This mindset has taken
+        me extremely far in my technical understanding and overall interpersonal
+        skills. This mindset alone has allowed me to reach out to the likes of
+        individuals in prestigious positions such as AI engineering consultants,
+        product managers, and many more. I have been able to ask questions with
+        the eagerness to learn, be persistent in my efforts to reach out, and
+        use the resources I am given by these influential individuals to grow my
+        technical and non-technical skills.
+      </p>
+
+      <p class="hb" id="hb"> <!-- same procces used as above to edit this peace of text  -->
+        Hobbies :
+        Networking - GYM - Traveling - Basketball - Football - Music - Sight
+        Seeing - Cooking - Coding - Eating
+      </p>
+
+      <p class="sk1" id="sk2">
+        Skills : Python, Adaptability, Empathy, Critical thinking and
+        problem-solving, Ability to Work Under Pressure, Communication Skills,
+        Teamwork, Machine Learning fundamentals, AI Algorithms Fundamentals,
+        Leadership, HTML, CSS.
+      </p>
+    </main>
+
+    <aside></aside>
+
+    <footer> <!-- for copy  right reasons I added a copy within the fotter to keep that information at the end of the page -->
+      &copy; Kelvin Adjei Rounce 2023
+      <a class="icon" href="https://www.linkedin.com/in/kelvin-adjei-rounce-06b34824a"><i class="fa-brands fa-linkedin-in"></i></a> 
+      <a class="icon" href="https://github.com/kelv696"><i class="fa-brands fa-github"></i></a><!-- linking to my linkdin with a linkdin icon -->
+
+    </footer>
+  </body>
+</html> 

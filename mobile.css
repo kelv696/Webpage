@@ -1,0 +1,329 @@
+/* created a mobile css to target the mobile version of my website */
+
+body { /* settingt the template of my webiste for the mobile version */
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "aside"
+        "footer"
+    ;
+
+}
+
+
+
+
+.showNav { /* creating a hamburger icon   */
+    height: 0.8em;
+    width: 1.25em;
+    display: block;
+    border-top: 0.2em solid white;
+    border-bottom: 0.2em solid white;
+    border-radius: 0.1em;
+   
+
+
+}
+
+
+.showNav::before { /*  Editing the hamburger icon   */
+    content: '';
+    position: absolute;
+    width: 1.25em;
+    margin-top: 0.3em;
+    border-top: 0.2em solid #fff;
+}
+
+nav  { /*  creating the transition for the slide in effect for when hamburger icon is clicked  */
+    display: block;
+    background-color: #d4b483;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    transform: translate(150%,0);
+    transition: transform 0.5s ease-in
+  
+}
+
+
+
+
+
+
+#clicked .on { /* calling the animation when the icon is clicked  */
+    display: block;
+}
+
+#clicked .off {
+    display: none;
+}
+
+#clicked:target .on {
+    display: none;
+}
+
+#clicked:target .off {
+    display: block;
+}
+
+#clicked:target nav { 
+    display: block;
+    transform: translate(0,0);
+
+}
+
+img{ /*  Making sure images fit nicely in the phone website */
+    margin-left: 0; 
+    border-radius: 50%;
+    height: fit-content;
+
+}
+
+.ab {color: black; /* Editing text in the main page */
+border: 2px solid #d4b483 ;
+border-radius: 100px;
+padding: 27px;
+font-family: 'Playfair Display', serif;
+}
+
+form{  /*  implementing the form for the contact page */
+    display: grid;
+    width: 200px;
+    height: auto;
+    grid-template-columns: 45%;
+    align-items: center;
+    grid-gap: 0.5em;
+    grid-area: auto;
+    border-radius: 20%;
+    
+    
+   
+}
+
+/*  Editing the sumbit from form- same procces as followed in desktop  */
+input[type='submit'] {
+    grid-column: 2;
+    
+}
+
+
+input{
+    border: 6px solid gray;
+    color: #E4DFDA;
+    background-color: #d4b483;
+}
+
+input ::placeholder{
+    color: #f0e18b;
+}
+
+textarea{
+    border: 6px solid gray;
+    color: #fff;
+    background-color: #d4b483;
+}
+
+textarea ::placeholder {
+
+    color: #f0e18b;
+
+}
+
+.E{ /*  Targeting Enquiry text on Contact page to center*/
+    margin-left: 38%;
+}
+
+/* the css below follws the same designs as the desktop to maintain similarities 
+ */.ab{
+
+    border: 15px solid gray;
+    /* creating a border around the text for a better design  */
+    border-radius: 100px;
+    /* curving the border */
+    padding: 27px;
+    font-family: 'Playfair Display', serif;
+    /* using a font imported from google  */
+    letter-spacing: 1px;
+    text-indent: 50px;
+    line-height: 2;
+    font-weight: bold;
+    background-color: #d4b483;
+    text-align: center;
+    padding-top: 20%;
+    margin-top: 2%;
+    font-size: 1.5em;
+}
+
+.hb{ color: black;
+border: 15px solid gray;
+border-radius: 100px;
+padding: 27px;
+font-family: 'Playfair Display', serif;
+letter-spacing: 1px;
+text-indent: 14px;
+line-height: 1;
+font-weight: bold;
+background-color: #d4b483;
+margin-top: 2%;
+text-align: center;
+font-size: 1.5em;
+
+}
+
+.img{
+
+    padding: 3em;
+    border-radius: 50%;
+}
+
+
+.sk1 {
+   
+
+    color: black;
+    border: 15px solid gray;
+    border-radius: 355px;
+    padding: 27px;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 1px;
+    text-indent: 1px;
+    line-height: 1;
+    font-weight: bold;
+    background-color: #d4b483;
+    margin-top: 2%;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+
+
+
+img{
+
+    border-radius: 0%;
+}
+
+.c2{
+
+    font-size: 4em;
+}
+
+
+/* targeting the navigation section of mobile site 
+ */.ver {
+    background-color: #d4b483;
+    border: 2px solid #d4b483;
+    padding: 15px;
+    font-family: 'Playfair Display', serif;
+    list-style-type: none;
+    margin-left: -21%;
+  
+
+}
+
+form {
+    display: grid;
+    width: 100%;
+    height: 25em;
+    align-items: center;
+    grid-gap: 0.5em;
+    grid-area: auto;
+    border-radius: 20%;
+    margin-left: -21%;
+}
+
+
+.validation { /* implementing editing for the valitation section for the mobile section */
+    border-radius: 15%;
+    margin-left: 0%;
+    border: 5px solid rgba(0, 0, 1);
+    width: 700px;
+    height: 400px;
+    box-shadow: 7px 7px 7px #d4b483;
+}
+
+
+.exp2 {  /* Editing the font for validation page  */
+    margin-top: 2%;
+    color: #d4b483;
+    font-family: 'Josefin Sans';
+}
+
+.chan { /* editing Keyfeatues  section */
+    margin-top: 3%;
+    color: #d4b483;
+    font-family: 'Josefin Sans';
+}
+
+.exp1 { /*  same style as the desktop to maintain user friendliness.  */
+    margin-top: 3%; 
+    border: 10px gray;
+    padding: 27px;
+    font-family: 'Playfair Display', serif;
+    color: black;
+    background-color: #d4b483; /* mainting Luxry theme  */
+    text-align: center;
+}
+
+
+.cha1 {
+    margin-top: 3%;
+    border: 10px gray;
+    padding: 27px;
+    font-family: 'Playfair Display', serif;
+    color: black;
+    background-color: #d4b483;
+    text-align: center;
+}
+
+
+.htmlVal {
+    color: black;
+    font-family: 'Josefin Sans';
+}
+
+
+
+.pwcimg {
+    border-radius: 0%;
+    width: 400px;
+    height: 300px;
+    box-shadow: 7px 7px 7px #d4b483;
+    margin: 30px;
+    overflow: hidden;
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    border-radius: 20%;
+    border: 5px solid gray;
+
+}
+
+.p1i {
+
+    border: 5px solid rgba(0, 0, 1);
+}
+
+.p2i {
+    border: 5px solid rgba(0, 0, 1);
+}
+
+
+.p2i {
+    border-radius: 1%;
+}
+
+.p3i {
+    border-radius: 1%;
+    
+}
+
+.p3i {
+    border: 5px solid rgba(0, 0, 1);
+}

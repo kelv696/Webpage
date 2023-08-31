@@ -1,0 +1,100 @@
+* { margin: 0%; /* using star margin to aviod white spaces around the website   */    
+    padding: 0%; 
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap');
+/* The code above copys a link from google which will allow me to use a copy right free font  */   
+
+
+body {
+    display: grid; /*  #creating a grid that follows a structer of 3 columns  */
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "header header header"
+    "nav nav nav "
+    "main main aside"
+    "footer footer footer"
+    ;
+    }
+
+.ver{padding: 1em; /* ver class is connected to the ul tag which makes it easy to apply diffrernt disigns within ver*/  
+    margin-top: auto;
+    background-color:  #d4b483 ; /* chosing a backgroud couler to the section around the ver class   */   
+    font-size: large; /* chosing a font size for the ver class   */  
+    display: flex; /* cusing flex to spread the links within the ver  */  
+    justify-content: space-evenly;   /* making spread links even  */  
+    color: #E4DFDA; 
+    border: 2px solid #d4b483; /* #using a hex couler to get a spercfic couler way  */   
+    border-radius: auto ; /* #using auto to create a box like structure that fits around the ver class  */   
+    padding: 15px; /* #using padding for spacing  */  
+    font-family: 'Playfair Display', serif;/* This is the code for the font found on google, this apples it to the
+     ver class   */   
+} 
+
+.font{/*  this is in the header body  */
+    font-family: 'Playfair Display', serif;/*  adding in a new font found on google */
+    border: 2px solid #d4b483 ; /* #using a hex couler to get a spercfic couler way  */   
+    border-radius: 100px;
+    padding: 10px;
+} 
+
+.cl{ /* #this is in the main body  */
+    font-weight: lighter;
+    color: #2a2d3e ;
+}
+
+.c2{
+    color: #d4b483;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bolder;
+    font-size: xx-large;
+    
+  
+
+} 
+
+.c3{
+    color: #2a2d34;
+    font-weight: lighter;
+   
+}
+
+img{
+    margin-left: 40em; 
+}
+
+
+header {
+    background-color: #E4DFDA; /* #chosing a couler way for the header colume with hex  */   
+    color: dark gray;
+    padding: 20px; 
+    grid-area: header;
+    }
+
+
+nav { 
+    background-color: #d4b483 ; /* #chosing a couler way for the navigation colume with hex  */      
+    grid-area: nav; 
+    }
+
+main { 
+    background-color: #E4DFDA; /* #chosing a couler way for the main  colume with hex */
+        color: white;
+        grid-area: main;
+    }
+
+aside {
+        background-color: #E4DFDA;
+        grid-area: aside;
+        }
+    
+footer {
+    background-color: #E4DFDA;
+    color: #2a2d34;
+    grid-area: footer;
+        }
+

@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap');
+/* The code above copys a link from google which will allow me to use a copy right free font */
+
+* {
+    margin: 0%;
+    /* using star margin to aviod white spaces around the website   */
+}
+
+/* This main section is used to target both Desktop and main section  */
+body {
+    background-color: #E4DFDA;
+    width: 100%;
+}
+
+html {
+    /* using a scroll effect for when users click links from drop down menu - better user Experince */
+    scroll-behavior: smooth;
+}
+
+
+
+
+.font {
+    /*  this is in the header body  */
+    font-family: 'Playfair Display', serif;
+    /*  adding in a new font found on google */
+    border: 2px solid #d4b483;
+    /* #using a hex couler to get a spercfic couler way  */
+    border-radius: 100px;
+    padding: 10px;
+}
+
+
+/* editing main text for both desktop and mobile  */
+
+/* All of the c class code below is editing the main page headers 
+ */
+.cl {
+    /* #this is in the main body - targeting title headers of main page - i want this to be the same of desktop and mobile hence doing it in the main  */
+    font-weight: lighter;
+    color: #2a2d3e;
+    margin-left: 10px;
+    font-size: 2em;
+
+}
+
+.c2 {
+    color: #d4b483;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bolder;
+    font-size: xx-large;
+    margin-left: 10px;
+    font-size: 3em;
+}
+
+
+
+
+.c3 { 
+    color: #2a2d34;
+    font-weight: lighter;
+    margin-left: 10px;
+    font-size: 2em;
+}
+
+
+
+
+/*  The code below is for designing each section website based on the structure */
+
+header {
+    /* #chosing a couler way for the header colume with hex  */
+    color: black;
+    padding: 20px;
+    grid-area: header;
+}
+
+
+nav {
+    /* #chosing a couler way for the navigation colume with hex  */
+    grid-area: nav;
+}
+
+main {
+    /* #chosing a couler way for the main  colume with hex */
+    color: white;
+    grid-area: main;
+}
+
+aside {
+    grid-area: aside;
+}
+
+footer {
+    color: #2a2d34;
+    grid-area: footer;
+}
+
+
+.E {  /* trageting the text on contact page 'enquiry' */
+    color: #2a2d34;
+    margin-left: 58%;
+    font-family: 'Playfair Display', serif;
+}
+
+body {
+    animation: backgroundC 10s infinite ; /* infate for it to repate  */
+}
+
+@keyframes backgroundC {  /* This is a transition in order to change the backgroud couler of the website - for better user exp*/
+
+    0%, 100% {
+        background-color: #E4DFDA;
+    }
+
+    60% {
+        background-color: #5f5b6b;
+    }
+
+    40% {
+        background-color: #5f5b6b;
+    }
+   
+}
+
+
+.icon{
+
+  color: #d4b483;
+  font-size: 1.5em;
+  padding-left: 0.2em;
+
+}
+
+.wrkexph1{ /* Editing the couler way and font of the names of where i have worked  */
+
+    color: #d4b483;
+    text-shadow:
+    1px 1px 0 #000;
+    font-family: 'Josefin Sans'
+
+}
+
+.wrkexph2{ /* editing the text under the tile of my work exprince  */
+    color: #000;
+    font-family: 'Josefin Sans' ; 
+    line-height: 2;
+    font-weight: bold;
+    text-shadow:
+    1px 1px 15px #d4b483;
+}
+
+

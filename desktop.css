@@ -1,0 +1,530 @@
+* {
+    margin: 0%;
+    /* using star margin to aviod white spaces around the website   */
+    padding: 0%;
+}
+
+/*  this file to target the desktop version of my website  */
+
+body {
+    display: grid;
+    /*  #creating a grid that follows a structer of 3 columns  */
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "header header header"
+        /*  The code below shoes the structure that my website followes based on the names given */
+        "nav nav nav "
+        "main main aside"
+        "footer footer footer"
+    ;
+}
+
+
+
+
+
+.ver {
+    padding: 1em;
+    /* ver class is connected to the ul tag which makes it easy to apply diffrernt disigns within ver*/
+    margin-top: auto;
+    background-color: #d4b483;
+    /* chosing a backgroud couler to the section around the ver class   */
+    font-size: large;
+    /* chosing a font size for the ver class   */
+    color: black;
+    border: 2px solid #d4b483;
+    /* #using a hex couler to get a spercfic couler way  */
+    padding: 15px;
+    /* #using padding for spacing  */
+    font-family: 'Playfair Display', serif;
+    /* This is the code for the font found on google, this apples it to the
+         ver class   */
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    text-align: center;
+}
+
+.sticky_nav {
+    /* creating a sticky navigation bar with postion sticky  */
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+
+
+nav>ul>li {
+    /* getting rid of bullet points on the list for better visuals  */
+    position: relative;
+    list-style: none;
+}
+
+nav ul ul {
+    /* creating the drop down menu and hidning it  - setting the opacity to zero to set the start of the animation fade*/
+    position: absolute;
+    display: block;
+    background-color: #d4b483;
+    /* using a spersfic colour found on coolers to stick to the  theme */
+    padding: 0;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease-in;
+    /* Creating the animation and the legth of the animation */
+    pointer-events: none;
+    border-radius: 20px;
+    /* setting the boder radious for a curved effect */
+
+}
+
+nav>ul>li:hover ul {
+    /*  displaying the drop down menu when the user hovers their mouse over the ul links  */
+    opacity: 1;
+    pointer-events: auto;
+    list-style: none;
+}
+
+nav li ul li:hover {
+    /* improving user experince by highligting the section their mouse is hovering over */
+    background-color: #E4DFDA;
+
+
+}
+
+nav ul li ul li {
+    list-style: none;
+    /* hiding link underlining */
+}
+
+a {
+    text-decoration: none;
+    color: black;
+
+}
+
+img {
+    /* Centering imgs  */
+    margin-left: 27em;
+    border-radius: 50%;
+}
+
+.img {
+
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    border-radius: 50%;
+    border: 5px solid rgba(0, 0, 1);
+}
+
+.img:hover {
+
+    transform: translateY(-15px);
+}
+
+
+/* Using grid format, the colums and names are spaced out and give a more user frindely feel
+ */
+
+form {
+    display: grid;
+    width: 560px;
+    height: 25em;
+    grid-template-columns: 80% 80%;
+    align-items: center;
+    grid-gap: 0.5em;
+    grid-area: auto;
+    border-radius: 20%;
+
+
+}
+
+input[type='submit'] {
+    /* setting the grid layout for submit input type */
+    grid-column: 2;
+
+}
+
+
+input {
+    /* designing the form to match the colour skeem   */
+    border: 6px solid gray;
+    color: #E4DFDA;
+    background-color: #d4b483;
+}
+
+input ::placeholder {
+    /* Targeting the input place holder */
+    color: #f0e18b;
+}
+
+textarea {
+    border: 6px solid gray;
+    color: #fff;
+    background-color: #d4b483;
+}
+
+textarea ::placeholder {
+
+    color: #f0e18b;
+
+}
+
+.ab {
+    /* Targeting text within the main homepage to edit  */
+    margin-left: 25%;
+    /* used for centering  */
+    color: black;
+    /* text colour */
+    border: 15px solid gray;
+    /* creating a border around the text for a better design  */
+    border-radius: 100px;
+    /* curving the border */
+    padding: 27px;
+    font-family: 'Playfair Display', serif;
+    /* using a font imported from google  */
+    letter-spacing: 1px;
+    text-indent: 50px;
+    line-height: 2;
+    font-weight: bold;
+    background-color: #d4b483;
+    text-align: center;
+}
+
+.hb {
+    /*  targting text on the main page- same procces as the code above*/
+    margin-left: 36%;
+    color: black;
+    border: 15px solid gray;
+    border-radius: 100px;
+    padding: 27px;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 1px;
+    text-indent: 14px;
+    line-height: 1;
+    font-weight: bold;
+    background-color: #d4b483;
+    margin-top: 2%;
+    width: 30em;
+    text-align: center;
+
+}
+
+.sk1 {
+    /*  same procces as above however the the width is smaller for a better effect */
+
+    color: black;
+    border: 15px solid gray;
+    border-radius: 355px;
+    padding: 27px;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 1px;
+    text-indent: 1px;
+    line-height: 1;
+    font-weight: bold;
+    background-color: #d4b483;
+    margin-top: 2%;
+    margin-left: 44%;
+    width: 29%;
+    text-align: center;
+
+}
+
+.exp1 {
+    /* Targeting a class on the Report page in order to edit with css like before */
+    margin-top: 3%;
+    border: 10px gray;
+    padding: 27px;
+    font-family: 'Playfair Display', serif;
+    color: black;
+    background-color: #d4b483;
+    text-align: center;
+    margin-left: 26%;
+
+}
+
+.exp2 {
+    /* Targeting text in p tag to edit on report page  */
+    margin-top: 2%;
+    margin-left: 55%;
+    /*  centering the text */
+    color: #d4b483;
+    font-family: 'Josefin Sans';
+}
+
+.chan {
+    /*  targeting p tag for text in report page about key features title */
+
+    margin-top: 3%;
+    margin-left: 55%;
+    color: #d4b483;
+    font-family: 'Josefin Sans';
+
+
+}
+
+.cha1 {
+    /* Targeting Text under Key features header  */
+
+    margin-top: 3%;
+    border: 10px gray;
+    padding: 27px;
+    font-family: 'Playfair Display', serif;
+    color: black;
+    background-color: #d4b483;
+    text-align: center;
+    margin-left: 26%;
+
+}
+
+.val1 {
+    /* Targeting the validation section of my report page */
+
+    margin-top: 3%;
+    margin-left: 55%;
+    color: #d4b483;
+    font-family: 'Josefin Sans';
+
+
+}
+
+.validation{
+    /* Targeting images imported and centering them and given them a curve for better visuals */
+    border-radius: 15%;
+    margin-left: 30%;
+    border: 5px solid rgba(0, 0, 1);
+    width: 700px;
+
+    height: 400px;
+    box-shadow: 7px 7px 7px #d4b483;
+}
+
+.indx {
+    /* Targeting text that showcases the image being shown for better understanding  */
+
+    color: black;
+    font-family: 'Josefin Sans';
+}
+
+
+.contactval {
+    /* Targeting the Imag for contact validation  */
+
+    border-radius: 15%;
+    /* setting the image size to the same as previous for userability */
+    margin-left: 27.5%;
+
+}
+
+.htmlVal {
+    color: black;
+    font-family: 'Josefin Sans';
+}
+
+
+.p1i {
+    /*Calling project one image*/
+
+    border-radius: 1%;
+    /* setting the image size for design*/
+    margin-left: 0%;
+    width: 500px;
+}
+
+.p1 {
+    /* editing project name  */
+
+    color: #d4b483;
+    font-family: 'Josefin Sans';
+}
+
+.p2i {
+    /* Targeting the image and editing  */
+
+    border-radius: 1%;
+    /* setting the image size for design*/
+    margin-left: 30%;
+    width: 500px;
+
+
+}
+
+.p2 {
+    /* project 2 text targeting and editing  */
+
+    color: #d4b483;
+    margin-left: 43%;
+    font-family: 'Josefin Sans';
+
+}
+
+.p3i {
+    /* Targeting project 3 image  */
+
+
+    border-radius: 1%;
+    /* setting the image size for design*/
+    margin-left: 0%;
+    width: 500px;
+}
+
+.p3 {
+    /*  project 3 text */
+
+
+    color: #d4b483;
+    font-family: 'Josefin Sans';
+}
+
+.P1EX {
+    /*  Editing project 1 p tag text to fit the colour theme */
+
+    margin-top: 0%;
+    border: 50px gray;
+    padding: 27px;
+    font-family: 'Playfair Display', serif;
+    color: black;
+    background-color: #d4b483;
+    text-align: left;
+    margin-left: 0%;
+}
+
+/* in the code below i am editing the images of the outcomes of my projecta and giving thema a hover effect to signify that it 
+is clickerbale  */
+
+.p1i {
+
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    border-radius: 0%;
+    border: 5px solid rgba(0, 0, 1);
+}
+
+.p1i:hover {
+
+    transform: translateY(-15px);
+}
+
+.p2i {
+
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    border-radius: 0%;
+    border: 5px solid rgba(0, 0, 1);
+}
+
+.p2i:hover {
+
+    transform: translateY(-15px);
+}
+
+.p3i {
+
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    border-radius: 0%;
+    border: 5px solid rgba(0, 0, 1);
+}
+
+.p3i:hover {
+
+    transform: translateY(-15px);
+}
+
+/* i used a key frame here to add slide in effects to the text under the outcomes  */
+
+@keyframes slidein {
+    from {
+        transform: translate(-1000px);
+    }
+
+
+    to {
+        transform: translate(0);
+    }
+}
+
+/* This is targeting the 3 project texts and creating a slide in effect */
+
+/* I created a shadow for a clean effect under the information section - on the right hand side
+ */
+.info {
+
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    padding: 27px;
+    color: #d4b483;
+    margin-left: 0%;
+    border-radius: 100%;
+    text-shadow:
+        1px 1px 0 #000;
+
+}
+
+
+@keyframes slidein {
+    0% {
+        
+    }
+
+
+    50% {
+        
+    }
+
+    100%{
+
+
+    }
+}
+
+
+
+
+
+.container{
+    display: grid;
+    /*  #creating a grid that follows a structer of 2 columns abd 2 rows in order to align myy 4 roles  */
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "pwcimg  "
+        /*  The code below shoes the structure that my website followes based on the names given */;
+    margin-left: 15em;
+
+} 
+
+
+.pwcimg{
+
+    border-radius: 0%;
+    width: 400px;
+
+    height: 300px;
+    box-shadow: 7px 7px 7px #d4b483;
+    margin: 30px;
+    overflow: hidden;
+
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    border-radius: 20%;
+    border: 5px solid gray;
+   
+}
+
+.pwcimg:hover {
+
+    transform: translateY(-15px);
+}
+
+

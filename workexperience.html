@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css" media="screen">
+    <link
+      rel="stylesheet"
+      href="mobile.css"
+      media="screen and (max-width: 800px)"
+    >
+    <link rel="shortcut icon" href="self1.JPG" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="desktop.css"
+      media="screen and (min-width: 800px)"> 
+      <script src="https://kit.fontawesome.com/70b749bba6.js" crossorigin="anonymous"></script>
+      <link rel="shortcut icon" href="self1.JPG" type="image/x-icon">
+
+</head>
+<body id = 'clicked'>
+
+    <header>
+        <a href="#clicked" class ='on showNav' ></a>
+        <a href="#" class ='off showNav' > </a>
+        <h1 class="font" >My Work </h1> - <!-- #This creates a header  -->
+    </header>
+    
+    <nav class="sticky_nav">
+        <ul class="ver">  <!-- creating a class to allow easy acces to all the pages when editing with css
+            list item nested indide a list tag list is nested in ul -  the code below creates links with href links with a giving name which inks to the a spercifc page  -->
+            <li> <a href="index.html"> Home page </a> 
+              <ul>
+                <li><a href=index.html#ab>About me </a></li>
+                <li><a href=index.html#hb>Hobbies</a></li>
+                <li><a href=index.html#sk2>skills</a></li>
+            </ul>
+        </li>
+            <li> <a href="portfolio.html">Portfolio</a>
+             <ul>
+                <li><a href='portfolio.html#pr2'> Project 1 - ML stock pridiction</a></li><!-- #Adding my projects to my portfolio -->
+                <li><a href = 'portfolio.html#pr2'>project 2 - ML Salary</a></li>
+                <li><a href = 'portfolio.html#pr2'>project 3 - Data Visualization</a></li>
+             </ul>
+            </li>
+            <li> <a href="contact.html"> Connect With Me </a>
+              <ul>
+                <li><a href="contact.html#Enquiry">Enquiry</a></li>
+                <li><a href="https://www.linkedin.com/in/kelvin-adjei-rounce-06b34824a">linkedin</a> </li>
+                <li><a href= "https://docs.google.com/document/d/1Nsfe_wQhwS1AfHzsUISpYph_h8mwi3gI/edit?usp=sharing&ouid=114020129318091959316&rtpof=true&sd=true">Resume</a></li>
+            </ul>
+        </li>
+            <li> <a href="workexperience.html">My Experience</a>
+            <ul>
+                <li><a href="workexperience.html#Pwc">PwC-Spring Week </a></li>
+                <li><a href="workexperience.html#KPMG">KPMG-insight day</a></li>
+                <li><a href="workexperience.html#db">Deutsche Bank-Spring Week</a></li>
+                <li><a href="workexperience.html#amex">American Express Spring Week</a></li>
+            </ul> </li>
+         <li> <a href="sitereport.html"> Report </a> 
+        <ul>
+            <li><a href='sitereport.html#exp'>My Experience</a></li>
+            <li><a href='sitereport.html#cha'>Key Featuers</a></li>
+            <li><a href='sitereport.html#val'>HTML Validation</a></li>
+            <li><a href='sitereport.html#valcss'>CSS Validation</a></li>
+            <li><a href='sitereport.html#prgress'>Progress </a></li>
+        </ul>
+    </li>
+        </ul>
+        </nav>
+<main> 
+<div class="container">
+    <div class="exprs">
+      <a href="https://www.pwc.co.uk/" target=" "><img id="Pwc" class="pwcimg" src="pwc1.jpg" alt="Pwc"></a>
+          <div class="intro">
+           <h1 class="wrkexph1" >PwC</h1>
+             <p class="wrkexph2"> During my time at the PwC insight week, I was given an amazing opportunity to network and enhance my overall skillset. 
+              I took every chance to meet new people, from interns to senior executives, and form genuine relationships. 
+              The week was filled with various activities, including workshops, presentations, and team-building exercises. 
+              See Resume for more. 
+        </p>
+      </div>
+    </div>  
+    <div class="exprs">
+      <a href="https://kpmg.com/uk/en/home.html" target=" "><img id="KPMG" class="pwcimg" src="KMPG1.jpg" alt="KPMG"></a>
+          <div class="intro">
+           <h1 class="wrkexph1">KPMG</h1>
+             <p class="wrkexph2"> 
+              
+              Had an amazing opportunity to teamwork network and increase my overall skills at KPMG insight day.
+              On this insight day, I grabbed every chance I had to meet new people and form genuine relationships. 
+              I met great minds and talk to them to this day. I was put into a team of random individuals and asked to create a solution for a set task. See my Resume for more details. 
+              
+        </p>
+      </div>
+    </div> 
+    <div class="exprs">
+      <a href="https://country.db.com/" target=" "><img id="db" class="pwcimg" src="db1.jpg" alt="Deutsche Bank"></a>
+          <div class="intro">
+           <h1 class="wrkexph1" >Deutsche Bank</h1>
+             <p class="wrkexph2" > 
+              At the Deutsche Bank insight week, I had an amazing opportunity to immerse myself in the world of finance and banking. 
+              Throughout the week, I engaged in various workshops, presentations, and networking events, 
+              where I was able to learn about the different roles and responsibilities within the company.See my Resume for more details. 
+        </p>
+      </div>
+    </div>
+    <div class="exprs">
+      <a href="https://www.americanexpress.com/" target=" "><img id="amex" class="pwcimg" src="Amex1.jpg" alt="American Express"></a>
+          <div class="intro">
+           <h1 class="wrkexph1" >Amex</h1>
+             <p class="wrkexph2" > During my time at the American Express insight week, I was given a unique opportunity to learn about the company's culture and operations. 
+              Throughout the week, I attended various workshops and presentations, 
+              where I was able to gain a better understanding of the different roles and responsibilities within the company.
+        </p>
+      </div>
+    </div>   
+</div>
+
+
+
+
+
+
+</main>
+
+<aside></aside>
+
+<footer>&copy; Kelvin Adjei Rounce 2023
+<a class="icon" href="https://www.linkedin.com/in/kelvin-adjei-rounce-06b34824a"><i class="fa-brands fa-linkedin-in"></i></a> 
+      <a class="icon" href="https://github.com/kelv696"><i class="fa-brands fa-github"></i></a><!-- linking to my linkdin with a linkdin icon --></footer>
+
+</body>
+</html>

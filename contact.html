@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css" media="screen">
+    <link rel="shortcut icon" href="self1.JPG" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="mobile.css"
+      media="screen and (max-width: 800px)"
+    >
+    <link
+      rel="stylesheet"
+      href="desktop.css"
+      media="screen and (min-width: 800px)"> 
+      <script src="https://kit.fontawesome.com/70b749bba6.js" crossorigin="anonymous"></script>
+</head>
+<body id = 'clicked'>
+
+    <header>
+        <a href="#clicked" class ='on showNav' ></a>
+        <a href="#" class ='off showNav' > </a>
+        <h1 class="font" >Contact </h1> - <!-- #This creates a header  -->
+    </header>
+    
+    <nav class="sticky_nav">
+        <ul class="ver">  <!-- creating a class to allow easy acces to all the pages when editing with css
+            list item nested indide a list tag list is nested in ul -  the code below creates links with href links with a giving name which inks to the a spercifc page  -->
+            <li> <a href="index.html"> Home page </a> 
+              <ul>
+                <li><a href=index.html#ab>About Me </a></li>
+                <li><a href=index.html#hb>Hobbies</a></li>
+                <li><a href=index.html#sk2>skills</a></li>
+            </ul>
+        </li>
+            <li> <a href="portfolio.html">Portfolio</a>
+             <ul>
+                <li><a href='portfolio.html#pr1' > Project 1 - ML stock pridiction</a></li><!-- #Adding my projects to my portfolio -->
+                <li><a href = 'portfolio.html#pr2'>project 2 - ML Salary</a></li>
+                <li><a href = 'portfolio.html#pr3'>project 3 - Data Visualization</a></li>
+             </ul>
+            </li>
+            <li> <a href="contact.html"> Connect With Me </a> <!-- link to contact page  -->
+              <ul>
+                <li><a href="contact.html#Enquiry">Enquiry</a></li> <!-- Ids used to send user to desired page  -->
+                <li><a href="https://www.linkedin.com/in/kelvin-adjei-rounce-06b34824a">linkedin</a> </li> 
+                <li><a href= "https://1drv.ms/w/s!Auzi7VKwlrkrjWMWNm70FjQ-rxSG?e=mEIWrx">Resume</a></li> <!-- Added resumer to allow users to get to know me better -->
+            </ul>
+        </li>
+        <li> <a href="workexperience.html">My Experience</a>
+        <ul>
+            <li><a href="workexperience.html#Pwc">PwC-Spring Week </a></li>
+            <li><a href="workexperience.html#KPMG">KPMG-insight day</a></li>
+            <li><a href="workexperience.html#db">Deutsche Bank-Spring Week</a></li>
+            <li><a href="workexperience.html#amex">American Express Spring Week</a></li>
+        </ul> </li>
+         <li> <a href="sitereport.html"> Report </a> 
+        <ul>
+            <li><a href='sitereport.html#exp'>My Experience</a></li>
+            <li><a href='sitereport.html#cha'>Key Featuers</a></li>
+            <li><a href='sitereport.html#val'>HTML Validation</a></li>
+            <li><a href='sitereport.html#valcss'>CSS Validation</a></li>
+            <li><a href='sitereport.html#prgress'>Progress </a></li>
+        </ul>
+    </li>
+        </ul>
+        </nav>
+
+<main> 
+
+    <h2 class="E" id="E">Enquiry </h2> <!-- The class E was used to allow User friendly visuales of the word  -->
+    <form action="mailto:kkadjei696@gmail.com?subject=Contact" method="get"> <!-- #creating a form in order allow people to send a any enquiry to my emnail.  -->
+        
+        <label for="name"></label> <!-- used lables to keep form in the center  -->
+        <input type="text"  id="name" placeholder="Full Name"> <!-- using place holders for more user friendlyness  -->
+        
+        <label for="name"></label>
+        <input type="text" name="email" id="email" placeholder="Email"> <!-- Text box used for email  -->
+
+        <label for="name"></label>
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea> <!-- Text area used for a message to be typed by the user   -->
+        
+
+       
+
+        <input type="submit" value="Send"> <!-- sumbit imput to recive the messages  -->
+      
+        
+    </form>    
+</main>
+
+<aside></aside>
+
+<footer>&copy; Kelvin Adjei Rounce 2023 
+    <a class="icon" href="https://www.linkedin.com/in/kelvin-adjei-rounce-06b34824a"><i class="fa-brands fa-linkedin-in"></i></a> 
+    <a class="icon" href="https://github.com/kelv696"><i class="fa-brands fa-github"></i></a><!-- linking to my linkdin with a linkdin icon -->
+</footer>
+
+</body>
+</html>

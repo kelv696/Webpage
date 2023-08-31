@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css" media="screen" >
+    <link rel="shortcut icon" href="self1.JPG" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="mobile.css"
+      media="screen and (max-width: 800px)"
+    >
+    <link
+      rel="stylesheet"
+      href="desktop.css"
+      media="screen and (min-width: 800px)"
+    >
+    <script src="https://kit.fontawesome.com/70b749bba6.js" crossorigin="anonymous"></script>
+  </head>
+  <body id="clicked">
+    <header>
+      <a href="#clicked" class="on showNav"></a>
+      <a href="#" class="off showNav"> </a>
+      <h1 class="font">Portfolio</h1>
+      -
+      <!-- #This creates a header 
+     All the coding here is the same as for all pages as the structure remains the same - the diffrence is the content within the 
+     structure  -->
+    </header>
+
+    <nav class="sticky_nav">
+      <ul class="ver">
+        <!-- creating a class to allow easy acces to all the pages when editing with css
+            list item nested indide a list tag list is nested in ul -  the code below creates links with href links with a giving name which inks to the a spercifc page  -->
+        <li>
+          <a href="index.html"> Home Page </a>
+          <ul>
+            <li><a href="index.html#ab">About Me </a></li>
+            <li><a href="index.html#hb">Hobbies</a></li>
+            <li><a href="index.html#sk2">skills</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="portfolio.html">Portfolio</a>
+          <ul>
+            <li>
+              <a
+                href="portfolio.html#pr1"  >
+                Project 1 - ML stock pridiction</a
+              >
+            </li>
+            <!-- #Adding my projects to my portfolio using links, _blank send user to a new tab - the links take the user 
+            to a new page - in oder for this to work i had to convert my code which was in python created on Jupiter to html 
+            file and adding it to the same folder as the rest of my code -->
+            <li>
+              <a
+                href="portfolio.html#pr2"
+                >project 2 - ML Salary</a
+              >
+            </li>
+            <li>
+              <a href="portfolio.html#pr3" 
+              >project 3 - Data Visualization</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="contact.html"> Connect With Me </a>
+          <ul>
+            <li><a href="contact.html#Enquiry">Enquiry</a></li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/kelvin-adjei-rounce-06b34824a"
+                >linkedin</a
+              >
+            </li>
+            <!-- adding links to soicals and resume to contact page -->
+            <li>
+              <a
+                href="https://docs.google.com/document/d/1Nsfe_wQhwS1AfHzsUISpYph_h8mwi3gI/edit?usp=sharing&ouid=114020129318091959316&rtpof=true&sd=true"
+                >Resume</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="workexperience.html">My Experience</a>
+          <ul>
+            <li><a href="workexperience.html#Pwc">PwC-Spring Week </a></li>
+            <li><a href="workexperience.html#KPMG">KPMG-insight day</a></li>
+            <li><a href="workexperience.html#db">Deutsche Bank-Spring Week</a></li>
+            <li><a href="workexperience.html#amex">American Express Spring Week</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="sitereport.html"> Report </a>
+          <ul>
+            <li><a href="sitereport.html#exp">My Experience</a></li>
+            <li><a href="sitereport.html#cha">Key Featuers</a></li>
+            <li><a href='sitereport.html#val'>HTML Validation</a></li>
+            <li><a href='sitereport.html#valcss'>CSS Validation</a></li>
+            <li><a href='sitereport.html#prgress'>Progress </a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <h1 id="pr1" class="p1">Project 1 Outcome</h1>
+
+      <a href="Project_2_(Machine_learning_model)_GS_stock_prediction.html"><img class="p1i" src="Project_1.png" alt="Project 1 Outcome" > <p class="P1EX"> <!-- Ids where used to allow links to work, classed where used 
+        here to edit the text alongside with the images --> 
+        I began by gathering and organising previous data on Goldman Sachs stock prices.
+        I utilised two machine learning models, linear regression and decision trees, 
+        to make predictions after dividing the data into training and testing sets. 
+        I chose the decision tree model since it had a higher accuracy rating after analysing the models performance. 
+        In order to better analyse trends and spot any potential patterns, I represented the data and model output using 
+        a graph . I used the model to forecast Goldman Sachs' stock price in the future.
+       </p></a>
+
+     
+      <h1 id="pr2" class="p2">Project 2 Outcome</h1> <!-- classes where used to identify differnt text to allow for easy CSS designing -->
+
+      <a href="Machine_Learning_Project_1_(Linear_regression).html"><img class="p2i" src="project2.png" alt="Project 2 Outcome" > <p class="P1EX"> <!-- Ids where used to allow links to work, classed where used 
+        here to edit the text alongside with the images --> 
+        In order to forecast incomes based on age, I gathered data on people's ages and salaries, divided it into training and testing groups, and then used a linear regression model. 
+        I evaluated the model's performance,
+        finding it to be very accurate, and used scatterplots and regression lines to show the data. I used the model to explore numerous scenarios and to forecast predicted wages for people of various ages. 
+        Overall, the linear regression model offered insightful information on how age and earnings relate to one another.
+      </p></a>
+
+
+      <h1  id="pr3" class="p3">Project 3 Outcome</h1>
+
+      <a href="Project_3_Data_Insights.html"><img class="p3i" src="project3.png" alt="Project 3 Outcome" > <p> <p class="P1EX"> <!-- Ids where used to allow links to work, classed where used 
+        here to edit the text alongside with the images --> 
+        I As a university student working on a data analysis project, I collected and compared data , looking for patterns and trends that could provide insights. 
+        Using visualization techniques such as charts, graphs, and maps, I was able to make the data more accessible and identify interesting relationships between variables. 
+        The visualizations allowed me to see patterns and trends that were not immediately apparent in the raw data, and I was able to draw conclusions and make recommendations based on these insights. 
+        The project was a valuable learning experience in data analysis and visualization, and I was proud of the insights I was able to uncover.
+        
+      </p></a>
+
+    </main>
+
+    <aside>
+      <h2 class='info'>Click The Images For More Detail </h2>
+    </aside>
+
+    <footer>&copy; Kelvin Adjei Rounce 2023 
+      <a class="icon" href="https://www.linkedin.com/in/kelvin-adjei-rounce-06b34824a"><i class="fa-brands fa-linkedin-in"></i></a> 
+      <a class="icon" href="https://github.com/kelv696"><i class="fa-brands fa-github"></i></a><!-- linking to my linkdin with a linkdin icon -->
+    </footer>
+  </body>
+</html>
